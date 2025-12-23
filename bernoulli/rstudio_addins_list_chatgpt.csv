@@ -1,0 +1,22 @@
+"Package","Title","Description","Version"
+"CGNM","Cluster Gauss-Newton Method","Find multiple solutions of a nonlinear least squares problem.  Cluster Gauss-Newton method does not assume uniqueness of the solution of the nonlinear least squares problem and compute multiple minimizers. Please cite the following paper when this software is used in your research: Aoki et al. (2020) <doi:10.1007/s11081-020-09571-2>. Cluster Gauss–Newton method. Optimization and Engineering, 1-31.  Please cite the following paper when profile likelihood plot is drawn with this software and used in your research: Aoki and Sugiyama (2024) <doi:10.1002/psp4.13055>. Cluster Gauss-Newton method for a quick approximation of profile likelihood: With application to physiologically-based pharmacokinetic models. CPT Pharmacometrics Syst Pharmacol.13(1):54-67. GPT based helper bot available at <https://chatgpt.com/g/g-684936db9e748191a2796debb00cd755-cluster-gauss-newton-method-helper-bot> .","0.9.2"
+"chatgpt","Interface to 'ChatGPT' from R","'OpenAI's 'ChatGPT' <https://chat.openai.com/> coding assistant for 'RStudio'. A set 
+  of functions and 'RStudio' addins that aim to help the R developer in tedious coding tasks.","0.2.3"
+"ellmer","Chat with Large Language Models","Chat with large language models from a range of providers
+    including 'Claude' <https://claude.ai>, 'OpenAI'
+    <https://chatgpt.com>, and more. Supports streaming, asynchronous
+    calls, tool calling, and structured data extraction.","0.4.0"
+"epidict","Epidemiology Data Dictionaries and Random Data Generators","The 'R4EPIs' project <https://r4epi.github.io/sitrep/> seeks
+    to provide a set of standardized tools for analysis of outbreak and
+    survey data in humanitarian aid settings. This package currently
+    provides standardized data dictionaries from Medecins Sans Frontieres
+    Operational Centre Amsterdam for outbreak scenarios (Acute Jaundice
+    Syndrome, Cholera, Diphtheria, Measles, Meningitis) and surveys
+    (Retrospective mortality and access to care, Malnutrition, Vaccination
+    coverage and Event Based Surveillance) - as described in the following
+    <https://scienceportal.msf.org/assets/standardised-mortality-surveys?utm_source=chatgpt.com>.
+    In addition, a data generator from these dictionaries is provided. It
+    is also possible to read in any Open Data Kit format data dictionary.","0.1.0"
+"gptr","A Convenient R Interface with the OpenAI 'ChatGPT' API","A convenient interface with the OpenAI 'ChatGPT' API <https://openai.com/api>. 'gptr' allows you to interact with 'ChatGPT', a powerful language model, for various natural language processing tasks. The 'gptr' R package makes talking to 'ChatGPT' in R super easy. It helps researchers and data folks by simplifying the complicated stuff, like asking questions and getting answers. With 'gptr', you can use 'ChatGPT' in R without any hassle, making it simpler for everyone to do cool things with language!","0.7.0"
+"RPregression","A Simple Regression and Plotting Tool","Perform a regression analysis, generate a regression table, create a scatter plot, and download the results. It uses 'stargazer' for generating regression tables and 'ggplot2' for creating plots. With just two lines of code, you can perform a regression analysis, visualize the results, and save the output. It is part of my make R easy project where one doesn't need to know how to use various packages in order to get results and makes it easily accessible to beginners. This is a part of my make R easy project. Help from 'ChatGPT' was taken. References were Wickham (2016) <doi:10.1007/978-3-319-24277-4>.","0.1.0"
+"TheOpenAIR","Integrate 'OpenAI' Large Language Models into Your 'R' Workflows","Utilizing the 'OpenAI' API as the back end (<https://platform.openai.com/docs/api-reference>), 'TheOpenAIR' offers 'R' wrapper functions for the 'ChatGPT' endpoint and several high-level functions that enable the integration of 'ChatGPT' capabilities in diverse data-related tasks, such as data cleansing and automated analytics script generation.","0.1.0"
