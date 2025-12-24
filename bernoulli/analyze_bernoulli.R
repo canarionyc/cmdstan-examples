@@ -9,6 +9,10 @@ if (!requireNamespace("rstan", quietly = TRUE)) {
              "Please run: install.packages('rstan')"))
 }
 library(rstan) # For stan_trace, stan_dens, etc.
+options(mc.cores = parallel::detectCores()) # For execution on a local, multicore CPU with excess RAM
+rstan_options(auto_write = TRUE) # To avoid recompilation of unchanged Stan programs
+rstan_options(threads_per_chain = 1) # For within-chain threading using `reduce_sum()` or `map_rect()` Stan functions
+rstan_options()
 
 # ---- Check if coda is installed ----
 if (!requireNamespace("coda", quietly = TRUE)) {
@@ -24,11 +28,13 @@ library(coda)
 
 
 # Configuration ----
-exe_path <- "bernoulli.exe"
+setwd("C:/cmdstan/examples/bernoulli")
+getwd()
+exe_path <- "./bernoulli.exe"
 data_path <- "bernoulli.data.json"
 output_file <- "output.csv"
 
-# 1. Run the Sampler
+# 1. Run the Sampler ----
 if (!file.exists(exe_path)) {
   stop("Executable not found. Please build the model first.")
 }
@@ -39,10 +45,11 @@ cat("Running MCMC sampling..\n")
 # Here we run a single chain for demonstration.
 args <- c("sample",
           "data", paste0("file=", data_path),
-          "data", paste0("file=", data_path), 
+          "data", paste0("file=", data_path),
           "output", paste0("file=", output_file))
 
 # Run the executable
+print(exe_path)
 result <- system2(exe_path, args, stdout = FALSE)
 if (result != 0) stop("Sampling failed.")
 
